@@ -13,6 +13,7 @@ import transactionRoutes from "./routes/transaction.js";
 // import Transaction from "./models/Transaction.js";
 // import { kpis, products, transactions } from "./data/data.js";
 
+
 /* CONFIGURATIONS */
 dotenv.config();
 const app = express();
@@ -42,5 +43,7 @@ mongoose
     /* ADD DATA ONE TIME ONLY OR AS NEEDED */
     // await mongoose.connection.db.dropDatabase();
     // KPI.insertMany(kpis);
+    // Product.insertMany(products);
+    // Transaction.insertMany(transactions);
   })
   .catch((error) => console.log(`${error} did not connect`));
